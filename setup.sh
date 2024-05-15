@@ -24,8 +24,8 @@ if ask "Create & source ssh_aliases?"; then
 	echo "source ~/.ssh_aliases" >> ~/.bashrc
 fi
 
-for file in ".vimrc" ".bash_aliases"; do             #".tmux.conf"; do
+for file in ".bashrc" ".bash_aliases" ".vimrc"; do             #".tmux.conf"; do
 	if ask "Install ${file}?"; then 
-		ln -s "$(realpath "$file")" ~/${file}
+		ln -sf "$(realpath "$file")" ~/${file}
 	fi
 done
