@@ -7,14 +7,15 @@ function ask() {
 	[ -z "$response" ] || [ "$response" = "y" ] || [ "$response" = "Y" ];
 }
 
-# check for 
-for file in shell/*
-do
-	fullpath=$(realpath $file)
-	if ask "Source ${file}? "; then 
-		echo "source $fullpath" >> ~/.bashrc
-	fi
-done	
+# check for the files in the shell folder, and add them to the bashrc file.
+# will add things such as git_aliases in this folder in the future.
+#for file in shell/*
+#do
+#	fullpath=$(realpath $file)
+#	if ask "Source ${file}? "; then 
+#		echo "source $fullpath" >> ~/.bashrc
+#	fi
+#done	
 
 # check for ssh aliases
 if ask "Create & source ssh_aliases?"; then
