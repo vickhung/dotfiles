@@ -17,6 +17,6 @@ alias adb="adb.exe"
 #ollama
 alias ollama="ollama.exe"
 
-
-
+#start rust
+alias ruststart="$HOME/.cargo/env"
 
