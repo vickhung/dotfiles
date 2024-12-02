@@ -3,7 +3,7 @@
 
 alias bs='ssh vick.hung@10.242.20.24'
 
-alias bs='ssh mtb@10.242.98.116'
+alias mtb='ssh mtb@10.242.98.116'
 
 alias andytsaivm='sshpass -p "Angelisoso20~" ssh AndyTsai@10.242.20.24'
 
